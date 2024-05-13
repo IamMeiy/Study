@@ -1,0 +1,4 @@
+sudo service mongod start
+sudo service mongod status
+sudo service mongod stop
+sudo service mongod restart

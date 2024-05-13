@@ -9,9 +9,9 @@ async function insertmany(){
         const coll = db.collection('customer');
 
         const query = [
-            {name:'Meiy', age: 20},
-            {name:'vj', age:25},
-            {name:'vk', age:22}
+            {name:'Meiy', age: 20, user_id: 1},
+            {name:'vj', age:25, user_id: 2},
+            {name:'vk', age:22, user_id: 3}
         ];
         const insert = await coll.insertMany(query);
         console.log(insert);

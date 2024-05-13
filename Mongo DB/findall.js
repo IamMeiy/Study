@@ -9,9 +9,10 @@ async function findall(){
 
         // here we find all the and store in query as a array
         // without the toArray() method it wont work
-        const query = await coll.find({},{projection:{_id:0,name:1}}).toArray();
+        const query = await coll.find({name:/^v/},{projection:{_id:0,name:1}}).toArray();
 
-        console.log(JSON.stringify(query.map(cust => cust.name)));
+        // console.log(JSON.stringify(query.map(cust => cust.name)));
+        console.log(query)
     }
     finally{
         await client.close();

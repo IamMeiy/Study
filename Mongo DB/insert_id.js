@@ -8,7 +8,7 @@ async function insert_id(){
         const db = client.db('mydb');
         const coll = db.collection('id_cust');
 
-        const query = {_id:123, name:'Meiy', id: true};
+        const query = {_id:3, name:'Vikram'};
 
         const insert = await coll.insertOne(query);
 
